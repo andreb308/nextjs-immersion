@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import WaveText from "@/components/smoothui/ui/WaveText";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
         inicial à implantação final. Domine as melhores práticas e as
         ferramentas essenciais para o desenvolvimento front-end.
       </h3>
-      <Button className="text-xl px-8 py-6 font-semibold">
-        Comece a aprender!
-      </Button>
+      <Link href="/posts">
+        <Button className="text-xl px-8 py-6 font-semibold">
+          Comece a aprender!
+        </Button>
+      </Link>
     </main>
   );
 }
